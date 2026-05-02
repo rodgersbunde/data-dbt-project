@@ -1,0 +1,81 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Cleaned customers staging model"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_orders
+    description: "Cleaned orders staging model"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_customers')
+                field: customer_id
+
+  - name: stg_order_details
+    description: "Cleaned order line items (order details)"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_orders')
+                field: order_id
+
+      - name: product_id
+        tests:
+          - not_null
+
+      - name: quantity
+        tests:
+          - not_null
+
+  - name: stg_payments
+    description: "Cleaned payments staging model"
+    columns:
+      - name: payment_id
+        tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_orders')
+                field: order_id
+
+  - name: stg_products
+    description: "Cleaned products staging model"
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        tests:
+          - not_null
+
+      - name: category
+        tests:
+          - not_null
+
+      - name: price
+        tests:
+          - not_null

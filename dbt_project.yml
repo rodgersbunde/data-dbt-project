@@ -1,0 +1,38 @@
+name: 'retail_project'
+version: '1.0'
+config-version: 2
+profile: 'retail_project'
+
+# Paths
+model-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+
+# Where compiled SQL and artifacts go
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+# Default materializations + schema
+models:
+  retail_project:
+    +schema: retail   # ✅ ensures all models go to retail schema
+
+    staging:
+      +materialized: table
+
+    marts:
+      +materialized: table
+
+    dimensions:
+      +materialized: table
+
+    fact:
+      +materialized: table
+
+seeds:
+  retail_project:
+    +schema: retail   # ✅ ensures seeds go to retail schema
