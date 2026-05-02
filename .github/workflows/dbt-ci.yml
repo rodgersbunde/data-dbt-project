@@ -15,7 +15,7 @@ jobs:
       postgres:
         image: postgres:13
         env:
-          POSTGRES_USER: dbt
+          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: Bonny@98
           POSTGRES_DB: postgres
         ports:
