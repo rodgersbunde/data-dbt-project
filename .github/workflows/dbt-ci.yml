@@ -45,9 +45,9 @@ jobs:
       # 4. Set environment variables for dbt connection
       - name: Set DBT env vars
         run: |
-          echo "DBT_USER=dbt" >> $GITHUB_ENV
-          echo "DBT_PASSWORD=dbt" >> $GITHUB_ENV
-          echo "DBT_DB=warehouse" >> $GITHUB_ENV
+          echo "DBT_USER=postgres" >> $GITHUB_ENV
+          echo "DBT_PASSWORD=Bonny@98" >> $GITHUB_ENV
+          echo "DBT_DB=postgres" >> $GITHUB_ENV
           echo "DBT_HOST=localhost" >> $GITHUB_ENV
           echo "DBT_PORT=5432" >> $GITHUB_ENV
 
