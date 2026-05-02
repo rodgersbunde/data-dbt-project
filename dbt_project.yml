@@ -9,6 +9,7 @@ analysis-paths: ["analysis"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
 
 # Where compiled SQL and artifacts go
 target-path: "target"
@@ -16,13 +17,13 @@ clean-targets:
   - "target"
   - "dbt_modules"
 
-# Default materializations + schema
+# Default model configurations
 models:
   retail_project:
-    +schema: retail   # ✅ ensures all models go to retail schema
+    +schema: retail   # all models go to retail schema
 
     staging:
-      +materialized: table
+      +materialized: view   # recommended for staging layer
 
     marts:
       +materialized: table
@@ -33,6 +34,8 @@ models:
     fact:
       +materialized: table
 
+# Seeds configuration
 seeds:
   retail_project:
-    +schema: retail   # ✅ ensures seeds go to retail schema
+    +schema: retail   # seeds also go to retail schema
+    +materialized: table
