@@ -57,7 +57,8 @@ jobs:
 
       # 6. Seed data
       - name: dbt seed
-        run: dbt seed --target dev
+        run: dbt seed --no-partial-parse --target dev
+
 
       # 7. Run models (BEST PRACTICE: build instead of run)
       - name: dbt build
