@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: retail      # this is the source name you use in {{ source(...) }}
-    database: retail
+  
     schema: retail  # this is the actual schema in your database
     tables:
       - name: orders
