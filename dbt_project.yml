@@ -38,4 +38,4 @@ models:
 seeds:
   retail_project:
     +schema: retail   # seeds also go to retail schema
-    +materialized: table
+  
