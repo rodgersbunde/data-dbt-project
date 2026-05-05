@@ -1,0 +1,290 @@
+[0m12:14:07.801895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9B74EA860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9B97FCA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9B97FC820>]}
+
+
+============================== 12:14:07.818697 | f934888d-09fa-453b-bbc5-84813f870526 ==============================
+[0m12:14:07.818697 [info ] [MainThread]: Running with dbt=1.11.6
+[0m12:14:07.819548 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Administrator\\Documents\\data_dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt deps', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Administrator\\Documents\\data_dbt\\logs'}
+[0m12:14:08.058962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f934888d-09fa-453b-bbc5-84813f870526', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9B58F7970>]}
+[0m12:14:08.129441 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m12:14:08.133597 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m12:14:08.137749 [debug] [MainThread]: Command `dbt deps` succeeded at 12:14:08.136689 after 0.47 seconds
+[0m12:14:08.137749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9B74EA860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9B99A0970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9B8F07340>]}
+[0m12:14:08.137749 [debug] [MainThread]: Flushing usage events
+[0m12:14:09.369015 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:14:19.654213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4CE74A8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4D0A5CBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4D0A5C9D0>]}
+
+
+============================== 12:14:19.665751 | 48313a6b-a757-465a-a8d3-55e95a0d975c ==============================
+[0m12:14:19.665751 [info ] [MainThread]: Running with dbt=1.11.6
+[0m12:14:19.669762 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Administrator\\Documents\\data_dbt', 'invocation_command': 'dbt seed --no-partial-parse --target dev', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Administrator\\Documents\\data_dbt\\logs'}
+[0m12:14:19.987036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '48313a6b-a757-465a-a8d3-55e95a0d975c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4CEAA2470>]}
+[0m12:14:20.080164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '48313a6b-a757-465a-a8d3-55e95a0d975c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4D07DF460>]}
+[0m12:14:20.080785 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m12:14:20.430856 [debug] [MainThread]: checksum: c8b6b59961f1a44cdae45abf5547d0e7461bf6d514dde67ea6b1b10a452c5f5b, vars: {}, profile: , target: dev, version: 1.11.6
+[0m12:14:20.430856 [debug] [MainThread]: Partial parsing not enabled
+[0m12:14:23.363973 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'fct_orders' in
+package 'retail_project' (models\facts\facts.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+[0m12:14:23.374480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '48313a6b-a757-465a-a8d3-55e95a0d975c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4D22971C0>]}
+[0m12:14:23.673183 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.retail_project.marts
+- models.retail_project.fact
+[0m12:14:23.688615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '48313a6b-a757-465a-a8d3-55e95a0d975c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4D25A1C60>]}
+[0m12:14:23.910022 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Administrator\Documents\data_dbt\target\manifest.json
+[0m12:14:23.919874 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Administrator\Documents\data_dbt\target\semantic_manifest.json
+[0m12:14:23.971349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '48313a6b-a757-465a-a8d3-55e95a0d975c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4D22059C0>]}
+[0m12:14:23.971349 [info ] [MainThread]: Found 10 models, 1 snapshot, 4 seeds, 37 data tests, 5 sources, 465 macros
+[0m12:14:23.978724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '48313a6b-a757-465a-a8d3-55e95a0d975c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4D21C32E0>]}
+[0m12:14:23.978724 [info ] [MainThread]: 
+[0m12:14:23.978724 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:14:23.984748 [info ] [MainThread]: 
+[0m12:14:23.986124 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m12:14:23.987702 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m12:14:24.662981 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m12:14:24.662981 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "retail_project", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m12:14:24.662981 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:14:24.918028 [debug] [ThreadPool]: SQL status: SELECT 61 in 0.247 seconds
+[0m12:14:24.918028 [debug] [ThreadPool]: On list_postgres: Close
+[0m12:14:24.929758 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_snapshots'
+[0m12:14:24.945251 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_postgres_retail'
+[0m12:14:24.946261 [debug] [ThreadPool]: Using postgres connection "list_postgres_snapshots"
+[0m12:14:24.960271 [debug] [ThreadPool]: Using postgres connection "list_postgres_postgres_retail"
+[0m12:14:24.961910 [debug] [ThreadPool]: On list_postgres_snapshots: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "retail_project", "target_name": "dev", "connection_name": "list_postgres_snapshots"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'snapshots'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'snapshots'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'snapshots'
+  
+[0m12:14:24.963778 [debug] [ThreadPool]: On list_postgres_postgres_retail: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "retail_project", "target_name": "dev", "connection_name": "list_postgres_postgres_retail"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'postgres_retail'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'postgres_retail'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'postgres_retail'
+  
+[0m12:14:24.963778 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:14:24.963778 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:14:25.082743 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.117 seconds
+[0m12:14:25.082743 [debug] [ThreadPool]: SQL status: SELECT 14 in 0.117 seconds
+[0m12:14:25.082743 [debug] [ThreadPool]: On list_postgres_snapshots: ROLLBACK
+[0m12:14:25.082743 [debug] [ThreadPool]: On list_postgres_postgres_retail: ROLLBACK
+[0m12:14:25.093218 [debug] [ThreadPool]: On list_postgres_snapshots: Close
+[0m12:14:25.095067 [debug] [ThreadPool]: On list_postgres_postgres_retail: Close
+[0m12:14:25.112716 [debug] [MainThread]: Using postgres connection "master"
+[0m12:14:25.112716 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "retail_project", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m12:14:25.112716 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:14:25.227879 [debug] [MainThread]: SQL status: SELECT 12 in 0.112 seconds
+[0m12:14:25.235929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '48313a6b-a757-465a-a8d3-55e95a0d975c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4D2204F70>]}
+[0m12:14:25.235929 [debug] [MainThread]: On master: ROLLBACK
+[0m12:14:25.235929 [debug] [MainThread]: On master: COMMIT
+[0m12:14:25.235929 [debug] [MainThread]: Using postgres connection "master"
+[0m12:14:25.235929 [debug] [MainThread]: On master: COMMIT
+[0m12:14:25.235929 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m12:14:25.244077 [debug] [MainThread]: On master: Close
+[0m12:14:25.246747 [debug] [Thread-1 (]: Began running node seed.retail_project.customers
+[0m12:14:25.246747 [debug] [Thread-2 (]: Began running node seed.retail_project.order_details
+[0m12:14:25.246747 [debug] [Thread-3 (]: Began running node seed.retail_project.orders
+[0m12:14:25.246747 [debug] [Thread-4 (]: Began running node seed.retail_project.payments
+[0m12:14:25.246747 [info ] [Thread-1 (]: 1 of 4 START seed file postgres_retail.customers ............................... [RUN]
+[0m12:14:25.259898 [info ] [Thread-2 (]: 2 of 4 START seed file postgres_retail.order_details ........................... [RUN]
+[0m12:14:25.262855 [info ] [Thread-3 (]: 3 of 4 START seed file postgres_retail.orders .................................. [RUN]
+[0m12:14:25.262855 [info ] [Thread-4 (]: 4 of 4 START seed file postgres_retail.payments ................................ [RUN]
+[0m12:14:25.262855 [debug] [Thread-1 (]: Acquiring new postgres connection 'seed.retail_project.customers'
+[0m12:14:25.262855 [debug] [Thread-2 (]: Acquiring new postgres connection 'seed.retail_project.order_details'
+[0m12:14:25.262855 [debug] [Thread-3 (]: Acquiring new postgres connection 'seed.retail_project.orders'
+[0m12:14:25.262855 [debug] [Thread-4 (]: Acquiring new postgres connection 'seed.retail_project.payments'
+[0m12:14:25.262855 [debug] [Thread-1 (]: Began compiling node seed.retail_project.customers
+[0m12:14:25.262855 [debug] [Thread-2 (]: Began compiling node seed.retail_project.order_details
+[0m12:14:25.275560 [debug] [Thread-3 (]: Began compiling node seed.retail_project.orders
+[0m12:14:25.275560 [debug] [Thread-4 (]: Began compiling node seed.retail_project.payments
+[0m12:14:25.275560 [debug] [Thread-1 (]: Began executing node seed.retail_project.customers
+[0m12:14:25.275560 [debug] [Thread-2 (]: Began executing node seed.retail_project.order_details
+[0m12:14:25.275560 [debug] [Thread-3 (]: Began executing node seed.retail_project.orders
+[0m12:14:25.282569 [debug] [Thread-4 (]: Began executing node seed.retail_project.payments
+[0m12:14:25.379145 [debug] [Thread-1 (]: Using postgres connection "seed.retail_project.customers"
+[0m12:14:25.468331 [debug] [Thread-2 (]: Using postgres connection "seed.retail_project.order_details"
+[0m12:14:25.468331 [debug] [Thread-3 (]: Using postgres connection "seed.retail_project.orders"
+[0m12:14:25.492994 [debug] [Thread-1 (]: On seed.retail_project.customers: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "retail_project", "target_name": "dev", "node_id": "seed.retail_project.customers"} */
+truncate table "postgres"."postgres_retail"."customers"
+[0m12:14:25.501301 [debug] [Thread-4 (]: Using postgres connection "seed.retail_project.payments"
+[0m12:14:25.501301 [debug] [Thread-2 (]: On seed.retail_project.order_details: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "retail_project", "target_name": "dev", "node_id": "seed.retail_project.order_details"} */
+truncate table "postgres"."postgres_retail"."order_details"
+[0m12:14:25.511804 [debug] [Thread-3 (]: On seed.retail_project.orders: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "retail_project", "target_name": "dev", "node_id": "seed.retail_project.orders"} */
+truncate table "postgres"."postgres_retail"."orders"
+[0m12:14:25.513928 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:14:25.515660 [debug] [Thread-4 (]: On seed.retail_project.payments: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "retail_project", "target_name": "dev", "node_id": "seed.retail_project.payments"} */
+truncate table "postgres"."postgres_retail"."payments"
+[0m12:14:25.515660 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:14:25.518746 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:14:25.522139 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m12:14:25.595772 [debug] [Thread-2 (]: SQL status: TRUNCATE TABLE in 0.079 seconds
+[0m12:14:25.597411 [debug] [Thread-1 (]: SQL status: TRUNCATE TABLE in 0.084 seconds
+[0m12:14:25.606888 [debug] [Thread-4 (]: SQL status: TRUNCATE TABLE in 0.085 seconds
+[0m12:14:25.638843 [debug] [Thread-3 (]: SQL status: TRUNCATE TABLE in 0.119 seconds
+[0m12:14:25.984073 [debug] [Thread-2 (]: Using postgres connection "seed.retail_project.order_details"
+[0m12:14:25.992116 [debug] [Thread-1 (]: Using postgres connection "seed.retail_project.customers"
+[0m12:14:26.105379 [debug] [Thread-2 (]: On seed.retail_project.order_details: 
+          insert into "postgres"."postgres_retail"."order_details" ("order_id", "product_id", "quantity", "unit_price") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,...
+[0m12:14:26.145176 [debug] [Thread-3 (]: Using postgres connection "seed.retail_project.orders"
+[0m12:14:26.225240 [debug] [Thread-1 (]: On seed.retail_project.customers: 
+          insert into "postgres"."postgres_retail"."customers" ("customer_id", "first_name", "last_name", "city", "email", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%...
+[0m12:14:26.276544 [debug] [Thread-4 (]: Using postgres connection "seed.retail_project.payments"
+[0m12:14:26.286274 [debug] [Thread-3 (]: On seed.retail_project.orders: 
+          insert into "postgres"."postgres_retail"."orders" ("order_id", "customer_id", "order_date", "shipped_date", "status", "total_amount") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,...
+[0m12:14:26.288378 [debug] [Thread-4 (]: On seed.retail_project.payments: 
+          insert into "postgres"."postgres_retail"."payments" ("payment_id", "order_id", "payment_date", "amount", "payment_method") values
+          (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,...
+[0m12:14:26.295208 [debug] [Thread-1 (]: SQL status: INSERT 0 100 in 0.007 seconds
+[0m12:14:26.295208 [debug] [Thread-2 (]: SQL status: INSERT 0 400 in 0.014 seconds
+[0m12:14:26.295208 [debug] [Thread-3 (]: SQL status: INSERT 0 100 in 0.006 seconds
+[0m12:14:26.304084 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.retail_project.customers"
+[0m12:14:26.304084 [debug] [Thread-4 (]: SQL status: INSERT 0 400 in 0.014 seconds
+[0m12:14:26.308272 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.retail_project.order_details"
+[0m12:14:26.308272 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.retail_project.orders"
+[0m12:14:26.311841 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.retail_project.payments"
+[0m12:14:26.378768 [debug] [Thread-1 (]: On seed.retail_project.customers: COMMIT
+[0m12:14:26.394801 [debug] [Thread-2 (]: On seed.retail_project.order_details: COMMIT
+[0m12:14:26.396807 [debug] [Thread-4 (]: On seed.retail_project.payments: COMMIT
+[0m12:14:26.405393 [debug] [Thread-1 (]: Using postgres connection "seed.retail_project.customers"
+[0m12:14:26.402785 [debug] [Thread-3 (]: On seed.retail_project.orders: COMMIT
+[0m12:14:26.405734 [debug] [Thread-2 (]: Using postgres connection "seed.retail_project.order_details"
+[0m12:14:26.409069 [debug] [Thread-4 (]: Using postgres connection "seed.retail_project.payments"
+[0m12:14:26.411363 [debug] [Thread-1 (]: On seed.retail_project.customers: COMMIT
+[0m12:14:26.413067 [debug] [Thread-3 (]: Using postgres connection "seed.retail_project.orders"
+[0m12:14:26.413067 [debug] [Thread-2 (]: On seed.retail_project.order_details: COMMIT
+[0m12:14:26.413067 [debug] [Thread-4 (]: On seed.retail_project.payments: COMMIT
+[0m12:14:26.413067 [debug] [Thread-3 (]: On seed.retail_project.orders: COMMIT
+[0m12:14:26.425054 [debug] [Thread-2 (]: SQL status: COMMIT in 0.007 seconds
+[0m12:14:26.429019 [debug] [Thread-3 (]: SQL status: COMMIT in 0.008 seconds
+[0m12:14:26.430359 [debug] [Thread-4 (]: SQL status: COMMIT in 0.010 seconds
+[0m12:14:26.438609 [debug] [Thread-2 (]: On seed.retail_project.order_details: Close
+[0m12:14:26.438609 [debug] [Thread-3 (]: On seed.retail_project.orders: Close
+[0m12:14:26.444678 [debug] [Thread-4 (]: On seed.retail_project.payments: Close
+[0m12:14:26.449785 [debug] [Thread-1 (]: SQL status: COMMIT in 0.034 seconds
+[0m12:14:26.452615 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48313a6b-a757-465a-a8d3-55e95a0d975c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4D111AC80>]}
+[0m12:14:26.456793 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48313a6b-a757-465a-a8d3-55e95a0d975c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4D01670A0>]}
+[0m12:14:26.456793 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48313a6b-a757-465a-a8d3-55e95a0d975c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4D2204310>]}
+[0m12:14:26.458572 [debug] [Thread-1 (]: On seed.retail_project.customers: Close
+[0m12:14:26.461174 [info ] [Thread-2 (]: 2 of 4 OK loaded seed file postgres_retail.order_details ....................... [[32mINSERT 400[0m in 1.18s]
+[0m12:14:26.463733 [info ] [Thread-4 (]: 4 of 4 OK loaded seed file postgres_retail.payments ............................ [[32mINSERT 400[0m in 1.19s]
+[0m12:14:26.465737 [info ] [Thread-3 (]: 3 of 4 OK loaded seed file postgres_retail.orders .............................. [[32mINSERT 100[0m in 1.19s]
+[0m12:14:26.465737 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48313a6b-a757-465a-a8d3-55e95a0d975c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4D0FD9870>]}
+[0m12:14:26.468543 [debug] [Thread-2 (]: Finished running node seed.retail_project.order_details
+[0m12:14:26.468543 [debug] [Thread-4 (]: Finished running node seed.retail_project.payments
+[0m12:14:26.468543 [debug] [Thread-3 (]: Finished running node seed.retail_project.orders
+[0m12:14:26.472877 [info ] [Thread-1 (]: 1 of 4 OK loaded seed file postgres_retail.customers ........................... [[32mINSERT 100[0m in 1.20s]
+[0m12:14:26.475433 [debug] [Thread-1 (]: Finished running node seed.retail_project.customers
+[0m12:14:26.476940 [debug] [MainThread]: On master: COMMIT
+[0m12:14:26.478675 [debug] [MainThread]: Using postgres connection "master"
+[0m12:14:26.478675 [debug] [MainThread]: On master: COMMIT
+[0m12:14:26.478675 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:14:26.511996 [debug] [MainThread]: SQL status: COMMIT in 0.041 seconds
+[0m12:14:26.511996 [debug] [MainThread]: On master: Close
+[0m12:14:26.522632 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:14:26.522632 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m12:14:26.522632 [debug] [MainThread]: Connection 'list_postgres_snapshots' was properly closed.
+[0m12:14:26.524635 [debug] [MainThread]: Connection 'list_postgres_postgres_retail' was properly closed.
+[0m12:14:26.524635 [debug] [MainThread]: Connection 'seed.retail_project.customers' was properly closed.
+[0m12:14:26.525641 [debug] [MainThread]: Connection 'seed.retail_project.order_details' was properly closed.
+[0m12:14:26.525641 [debug] [MainThread]: Connection 'seed.retail_project.orders' was properly closed.
+[0m12:14:26.525641 [debug] [MainThread]: Connection 'seed.retail_project.payments' was properly closed.
+[0m12:14:26.525641 [info ] [MainThread]: 
+[0m12:14:26.525641 [info ] [MainThread]: Finished running 4 seeds in 0 hours 0 minutes and 2.54 seconds (2.54s).
+[0m12:14:26.529204 [debug] [MainThread]: Command end result
+[0m12:14:26.577918 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Administrator\Documents\data_dbt\target\manifest.json
+[0m12:14:26.578956 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Administrator\Documents\data_dbt\target\semantic_manifest.json
+[0m12:14:26.589699 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Administrator\Documents\data_dbt\target\run_results.json
+[0m12:14:26.594563 [info ] [MainThread]: 
+[0m12:14:26.595281 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:14:26.595281 [info ] [MainThread]: 
+[0m12:14:26.595281 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m12:14:26.595281 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 4 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m12:14:26.595281 [debug] [MainThread]: Command `dbt seed` succeeded at 12:14:26.595281 after 7.08 seconds
+[0m12:14:26.595281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4CE74A8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4CCB579D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4CEABC4C0>]}
+[0m12:14:26.595281 [debug] [MainThread]: Flushing usage events
+[0m12:14:28.074820 [debug] [MainThread]: An error was encountered while trying to flush usage events

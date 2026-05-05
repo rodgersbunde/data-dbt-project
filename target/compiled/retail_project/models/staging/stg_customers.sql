@@ -1,6 +1,4 @@
-{{ config(
-materialized='table') 
-}}
+
 
 select
     customer_id,
@@ -10,4 +8,4 @@ select
     email,
     created_at,
 	current_timestamp as load_timestamp
-from {{ ref( 'customers') }}
+from "postgres"."postgres"."customers"
