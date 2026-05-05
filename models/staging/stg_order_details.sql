@@ -11,4 +11,4 @@ select
     cast(quantity as integer) as quantity,
     cast(unit_price as numeric(10,2)) as unit_price
 
-from {{ source('retail', 'order_details') }}
+from {{ ref( 'order_details') }}

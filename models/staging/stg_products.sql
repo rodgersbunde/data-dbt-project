@@ -5,4 +5,4 @@ select
     product_name,
     category,
     price
-from {{ source('retail', 'products') }}
+from {{ ref('products') }}

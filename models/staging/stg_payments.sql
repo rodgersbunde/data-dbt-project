@@ -8,4 +8,4 @@ select
     payment_date,
     amount,
     payment_method
-from {{ source('retail', 'payments') }}
+from {{ ref('payments') }}

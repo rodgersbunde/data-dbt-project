@@ -9,4 +9,4 @@ select
 	shipped_date,
     status,
     total_amount as order_total
-from {{ source('retail', 'orders') }}
+from {{ ref('orders') }}
