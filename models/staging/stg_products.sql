@@ -1,8 +1,16 @@
 {{ config(materialized='view') }}
 
-select distinct
+select
     product_id,
     product_name,
     category,
     price
-from {{ ref('products') }}
+from (
+    select *,
+           row_number() over (
+               partition by product_id
+               order by product_id
+           ) as rn
+    from {{ ref('products') }}
+) t
+where rn = 1
