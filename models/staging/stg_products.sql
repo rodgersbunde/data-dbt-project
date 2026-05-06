@@ -1,6 +1,6 @@
 {{ config(materialized='view') }}
 
-select
+select distinct
     product_id,
     product_name,
     category,
