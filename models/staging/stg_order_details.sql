@@ -12,3 +12,6 @@ select
     cast(unit_price as numeric(10,2)) as unit_price
 
 from {{ ref( 'order_details') }}
+where product_id in (
+    select product_id from {{ ref('products') }}
+)

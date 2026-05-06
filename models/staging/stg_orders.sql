@@ -10,3 +10,4 @@ select
     status,
     total_amount as order_total
 from {{ ref('orders') }}
+where order_id is not null

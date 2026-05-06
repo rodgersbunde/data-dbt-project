@@ -9,3 +9,5 @@ select
     amount,
     payment_method
 from {{ ref('payments') }}
+where payment_id is not null
+and order_id is not null
