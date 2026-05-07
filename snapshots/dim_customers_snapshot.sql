@@ -16,7 +16,7 @@ select
     last_name,
     email,
     city,
-    created_at as signup_date
+    created_at::timestamp as signup_date
 from {{ ref('stg_customers') }}
 
 {% endsnapshot %}
