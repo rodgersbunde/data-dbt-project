@@ -13,5 +13,8 @@ from (
            ) as rn
     from {{ ref('products') }}
 	where product_id is not null
+	 and product_name is not null
+        and category is not null
+        and price is not null
 ) t
 where rn = 1
