@@ -25,7 +25,7 @@ product_id,product_name,category,price
 649,beauty,Beauty,30.01
 145,beauty,Beauty,82.05
 121,sports,Sports,47.46
-544,sports,Sports,85.16
+744,sports,Sports,85.16
 622,home,Home,50.71
 543,beauty,Beauty,26.29
 175,beauty,Beauty,46.98
@@ -37,7 +37,7 @@ product_id,product_name,category,price
 876,home,Home,40.36
 249,clothing,Clothing,63.61
 477,sports,Sports,38.08
-629,beauty,Beauty,97.28
+729,beauty,Beauty,97.28
 542,home,Home,48.04
 784,clothing,Clothing,24.48
 411,sports,Sports,34.46
@@ -58,7 +58,7 @@ product_id,product_name,category,price
 451,clothing,Clothing,16.04
 469,sports,Sports,34.14
 423,clothing,Clothing,86.85
-451,electronics,Electronics,37.56
+551,electronics,Electronics,37.56
 491,beauty,Beauty,8.48
 612,home,Home,6.13
 976,beauty,Beauty,81.94
@@ -92,9 +92,13 @@ product_id,product_name,category,price
 111,clothing,Clothing,89.11
 130,beauty,Beauty,25.47
 848,beauty,Beauty,32.02
-411,beauty,Beauty,48.07
+911,beauty,Beauty,48.07
 317,electronics,Electronics,82.32
 904,home,Home,76.1
 327,home,Home,90.46
 500,beauty,Beauty,35.56
-608,sports,Sports,31.29
+108,sports,Sports,31.29
+,,,
+,,,
+,,,
+,,,s
